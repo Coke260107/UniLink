@@ -55,7 +55,23 @@
 - 기능 개발은 `dev` 브랜치에 개발 후 `PR`를 통해 `main`에 병합
 - `push --force` 절대 사용 금지!
 
+---
 
+## Development Environment Version Guide
+
+### 1. Frontend
+
+| 항목 | 버전 |
+| --- | --- |
+| Node | 20.9 이상 |
+
+#### 버전 확인 방법
+윈도우 `cmd` 실행 후 다음 명령어 입력
+``` powershell
+node --version
+```
+
+### 2. Backend
 
 
 
