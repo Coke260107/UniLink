@@ -1,0 +1,17 @@
+{
+  // Tailwind css
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+
+  //   // Tab / Indent
+  //   "editor.tabSize": 2,
+  //   "editor.insertSpaces": true,
+
+  //   // Prettier
+  "prettier.tabWidth": 2
+}
