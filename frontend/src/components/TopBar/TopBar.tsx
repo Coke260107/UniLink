@@ -10,8 +10,8 @@ const menus = [
 
 function TopBar() {
   return (
-    <header className="flex sticky top-0 z-50 w-full h-14">
-      <div className="flex flex-1 flex-row justify-between items-center-safe px-5">
+    <header className="flex sticky top-0 z-50  h-14">
+      <div className="flex flex-1 flex-row justify-between items-center-safe">
         <div className="flex justify-center-safe items-center-safe h-full gap-7.5">
           <Link
             to="/"
@@ -20,7 +20,7 @@ function TopBar() {
             UNILINK
           </Link>
 
-          <div className="flex flex-row">
+          <div className="hidden flex-row lg:flex">
             {menus.map((menu) => (
               <NavLink
                 key={menu.to}
