@@ -22,20 +22,27 @@ body {
   min-height: 100dvh;
 }
 
-button {
-  @apply cursor-pointer;
-}
+@layer base {
+  button {
+    @apply cursor-pointer 
+      text-stone-950 dark:text-stone-50;
+  }
 
-#root {
-  @apply w-full 
+  #root {
+    @apply w-full;
 
-  /* Typography */
-  text-stone-950 dark:text-stone-50
+    /* Typography */
+    @apply text-stone-950 dark:text-stone-50;
 
-  /* Background */
-  bg-stone-50 dark:bg-stone-900;
-}
+    /* Background */
+    @apply bg-stone-100 dark:bg-stone-900;
+  }
 
-* {
-  @apply transition-colors duration-400;
+  input::placeholder {
+    @apply text-stone-950/50;
+  }
+
+  .dark input::placeholder {
+    @apply text-stone-50/50;
+  }
 }

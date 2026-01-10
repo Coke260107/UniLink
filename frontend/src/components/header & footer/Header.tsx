@@ -10,47 +10,41 @@ const menus = [
 
 function TopBar() {
   return (
-    <header className="flex sticky top-0 z-50  h-14">
-      <div className="flex flex-1 flex-row justify-between items-center-safe">
-        <div className="flex justify-center-safe items-center-safe h-full gap-7.5">
-          <Link
-            to="/"
-            className="text-stone-950 text-3xl font-bold dark:text-stone-50"
-          >
-            UNILINK
-          </Link>
+    <div className="flex flex-1 flex-row justify-between items-center-safe">
+      <div className="flex justify-center-safe items-center-safe h-full gap-7.5">
+        <Link to="/" className="text-3xl font-bold">
+          UNILINK
+        </Link>
 
-          <div className="hidden flex-row lg:flex">
-            {menus.map((menu) => (
-              <NavLink
-                key={menu.to}
-                to={menu.to}
-                className={({ isActive }) =>
-                  `
-
-                  px-5 py-1.25
+        <div className="hidden flex-row lg:flex">
+          {menus.map((menu) => (
+            <NavLink
+              key={menu.to}
+              to={menu.to}
+              className={({ isActive }) =>
+                `
+                  px-2.5 py-1.25
                   ${
                     isActive
-                      ? "text-red-500 dark:text-blue-600"
-                      : "text-zinc-400"
+                      ? "text-red-500 dark:text-blue-500"
+                      : "text-stone-950/50 dark:text-stone-50/50"
                   }
                 `
-                }
-              >
-                <span className="font-semibold">{menu.label}</span>
-              </NavLink>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex justify-center-safe items-center-safe gap-7.5">
-          <LightDarkToggle />
-          <button className="flex justify-center-safe items-center-safe bg-red-500 px-3 py-1 rounded-lg dark:bg-blue-600">
-            <span className="text-white font-semibold">로그인</span>
-          </button>
+              }
+            >
+              <span className="font-semibold">{menu.label}</span>
+            </NavLink>
+          ))}
         </div>
       </div>
-    </header>
+
+      <div className="flex justify-center-safe items-center-safe gap-7.5">
+        <LightDarkToggle />
+        <button className="flex justify-center-safe items-center-safe bg-red-500 px-3 py-1 rounded-lg dark:bg-blue-500">
+          <span className="text-white font-semibold">로그인</span>
+        </button>
+      </div>
+    </div>
   );
 }
 

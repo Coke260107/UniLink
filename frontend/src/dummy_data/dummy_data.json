@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "title": "React 기초 스터디",
+    "category": "study",
+    "curMember": 4,
+    "maxMember": 8,
+    "expireAt": "2026-01-15T23:59:59Z"
+  },
+  {
+    "id": 2,
+    "title": "TypeScript 심화",
+    "category": "study",
+    "curMember": 6,
+    "maxMember": 10,
+    "expireAt": "2026-01-20T23:59:59Z"
+  },
+  {
+    "id": 3,
+    "title": "알고리즘 문제풀이",
+    "category": "study",
+    "curMember": 5,
+    "maxMember": 5,
+    "expireAt": "2026-01-12T18:00:00Z"
+  },
+  {
+    "id": 4,
+    "title": "CS 면접 대비",
+    "category": "study",
+    "curMember": 2,
+    "maxMember": 6,
+    "expireAt": "2026-02-01T23:59:59Z"
+  },
+  {
+    "id": 5,
+    "title": "Next.js 프로젝트",
+    "category": "study",
+    "curMember": 7,
+    "maxMember": 8,
+    "expireAt": "2026-01-25T23:59:59Z"
+  },
+  {
+    "id": 6,
+    "title": "프론트엔드 아키텍처",
+    "category": "study",
+    "curMember": 3,
+    "maxMember": 6,
+    "expireAt": "2026-02-05T23:59:59Z"
+  },
+  {
+    "id": 7,
+    "title": "백엔드 기초",
+    "category": "study",
+    "curMember": 6,
+    "maxMember": 10,
+    "expireAt": "2026-01-18T23:59:59Z"
+  },
+  {
+    "id": 8,
+    "title": "데이터베이스 설계",
+    "category": "study",
+    "curMember": 1,
+    "maxMember": 5,
+    "expireAt": "2026-02-10T23:59:59Z"
+  },
+  {
+    "id": 9,
+    "title": "운영체제 스터디",
+    "category": "study",
+    "curMember": 4,
+    "maxMember": 6,
+    "expireAt": "2026-01-22T23:59:59Z"
+  },
+  {
+    "id": 10,
+    "title": "네트워크 기초",
+    "category": "study",
+    "curMember": 2,
+    "maxMember": 5,
+    "expireAt": "2026-02-08T23:59:59Z"
+  },
+  {
+    "id": 11,
+    "title": "롤 랭크 게임",
+    "category": "game",
+    "curMember": 3,
+    "maxMember": 5,
+    "expireAt": "2026-01-09T22:00:00Z"
+  },
+  {
+    "id": 12,
+    "title": "발로란트 내전",
+    "category": "game",
+    "curMember": 8,
+    "maxMember": 10,
+    "expireAt": "2026-01-11T21:00:00Z"
+  },
+  {
+    "id": 13,
+    "title": "피파 친선 경기",
+    "category": "game",
+    "curMember": 2,
+    "maxMember": 4,
+    "expireAt": "2026-01-14T20:00:00Z"
+  },
+  {
+    "id": 14,
+    "title": "스타크래프트 리마스터",
+    "category": "game",
+    "curMember": 4,
+    "maxMember": 8,
+    "expireAt": "2026-01-16T22:00:00Z"
+  },
+  {
+    "id": 15,
+    "title": "배그 스쿼드",
+    "category": "game",
+    "curMember": 3,
+    "maxMember": 4,
+    "expireAt": "2026-01-10T23:00:00Z"
+  },
+  {
+    "id": 16,
+    "title": "오버워치 팀플",
+    "category": "game",
+    "curMember": 5,
+    "maxMember": 6,
+    "expireAt": "2026-01-19T21:00:00Z"
+  },
+  {
+    "id": 17,
+    "title": "마인크래프트 서버",
+    "category": "game",
+    "curMember": 7,
+    "maxMember": 12,
+    "expireAt": "2026-02-01T23:59:59Z"
+  },
+  {
+    "id": 18,
+    "title": "콘솔 게임 모임",
+    "category": "game",
+    "curMember": 1,
+    "maxMember": 4,
+    "expireAt": "2026-01-28T22:00:00Z"
+  },
+  {
+    "id": 19,
+    "title": "보드게임 번개",
+    "category": "game",
+    "curMember": 6,
+    "maxMember": 6,
+    "expireAt": "2026-01-13T19:00:00Z"
+  },
+  {
+    "id": 20,
+    "title": "모바일 게임 모임",
+    "category": "game",
+    "curMember": 2,
+    "maxMember": 5,
+    "expireAt": "2026-02-03T21:00:00Z"
+  },
+  {
+    "id": 21,
+    "title": "아침 러닝",
+    "category": "exercise",
+    "curMember": 3,
+    "maxMember": 6,
+    "expireAt": "2026-01-07T07:00:00Z"
+  },
+  {
+    "id": 22,
+    "title": "헬스장 PT",
+    "category": "exercise",
+    "curMember": 1,
+    "maxMember": 3,
+    "expireAt": "2026-01-18T20:00:00Z"
+  },
+  {
+    "id": 23,
+    "title": "요가 클래스",
+    "category": "exercise",
+    "curMember": 4,
+    "maxMember": 8,
+    "expireAt": "2026-01-21T10:00:00Z"
+  },
+  {
+    "id": 24,
+    "title": "주말 등산",
+    "category": "exercise",
+    "curMember": 6,
+    "maxMember": 10,
+    "expireAt": "2026-01-25T09:00:00Z"
+  },
+  {
+    "id": 25,
+    "title": "자전거 라이딩",
+    "category": "exercise",
+    "curMember": 2,
+    "maxMember": 5,
+    "expireAt": "2026-01-14T08:00:00Z"
+  },
+  {
+    "id": 26,
+    "title": "수영 연습",
+    "category": "exercise",
+    "curMember": 3,
+    "maxMember": 6,
+    "expireAt": "2026-01-17T19:00:00Z"
+  },
+  {
+    "id": 27,
+    "title": "클라이밍 체험",
+    "category": "exercise",
+    "curMember": 5,
+    "maxMember": 5,
+    "expireAt": "2026-01-22T18:00:00Z"
+  },
+  {
+    "id": 28,
+    "title": "필라테스",
+    "category": "exercise",
+    "curMember": 2,
+    "maxMember": 4,
+    "expireAt": "2026-01-29T11:00:00Z"
+  },
+  {
+    "id": 29,
+    "title": "농구 번개",
+    "category": "exercise",
+    "curMember": 7,
+    "maxMember": 10,
+    "expireAt": "2026-01-12T20:00:00Z"
+  },
+  {
+    "id": 30,
+    "title": "축구 풋살",
+    "category": "exercise",
+    "curMember": 8,
+    "maxMember": 10,
+    "expireAt": "2026-01-16T21:00:00Z"
+  },
+  {
+    "id": 31,
+    "title": "점심 같이 먹어요",
+    "category": "meal",
+    "curMember": 2,
+    "maxMember": 4,
+    "expireAt": "2026-01-08T12:00:00Z"
+  },
+  {
+    "id": 32,
+    "title": "저녁 회식",
+    "category": "meal",
+    "curMember": 5,
+    "maxMember": 8,
+    "expireAt": "2026-01-10T19:00:00Z"
+  },
+  {
+    "id": 33,
+    "title": "브런치 모임",
+    "category": "meal",
+    "curMember": 3,
+    "maxMember": 5,
+    "expireAt": "2026-01-11T11:00:00Z"
+  },
+  {
+    "id": 34,
+    "title": "카페 투어",
+    "category": "meal",
+    "curMember": 4,
+    "maxMember": 6,
+    "expireAt": "2026-01-18T15:00:00Z"
+  },
+  {
+    "id": 35,
+    "title": "치킨 번개",
+    "category": "meal",
+    "curMember": 6,
+    "maxMember": 6,
+    "expireAt": "2026-01-09T20:00:00Z"
+  },
+  {
+    "id": 36,
+    "title": "피자 나눔",
+    "category": "meal",
+    "curMember": 1,
+    "maxMember": 4,
+    "expireAt": "2026-01-13T19:00:00Z"
+  },
+  {
+    "id": 37,
+    "title": "혼밥 탈출",
+    "category": "meal",
+    "curMember": 2,
+    "maxMember": 3,
+    "expireAt": "2026-01-15T12:30:00Z"
+  },
+  {
+    "id": 38,
+    "title": "야식 모임",
+    "category": "meal",
+    "curMember": 4,
+    "maxMember": 6,
+    "expireAt": "2026-01-20T23:00:00Z"
+  },
+  {
+    "id": 39,
+    "title": "한식 맛집 탐방",
+    "category": "meal",
+    "curMember": 3,
+    "maxMember": 5,
+    "expireAt": "2026-01-24T18:30:00Z"
+  },
+  {
+    "id": 40,
+    "title": "디저트 모임",
+    "category": "meal",
+    "curMember": 2,
+    "maxMember": 4,
+    "expireAt": "2026-01-27T16:00:00Z"
+  }
+]
