@@ -16,8 +16,8 @@
 #### type 목록
 |type|설명|
 |---|---|
-|feat|새로운 기능|
-|fix|버그 수정|
+| feat | 새로운 기능 |
+| edit | 버그 및 코드 수정 |
 | refactor | 리팩토링 (기능 변경 없음) |
 | docs | 문서 변경 |
 | test | 테스트 추가/수정 |
@@ -65,6 +65,7 @@
 | 항목 | 버전 |
 | --- | --- |
 | Node | 20.9 이상 |
+| React | 19.2.0 |
 
 #### 버전 확인 방법
 윈도우 `cmd` 실행 후 다음 명령어 입력
@@ -73,11 +74,10 @@ node --version
 ```
 - `node`가 없는 경우 [여기](https://nodejs.org/ko/blog/release/v20.9.0)를 눌러 다운
 
-#### frontend(React) 개발 환경 설정 방
+#### frontend(React) 개발 환경 설정 방법
 1. 로컬에 clone을 받는다.
 2. 터미널에서 frontend로 들어간다.
 3. `~/frontend/`경로에서 터미널에 `npm install` 입력한다.
-4. 개발 시작!
 
 ### 2. Backend
 
