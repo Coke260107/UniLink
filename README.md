@@ -71,6 +71,13 @@
 ``` powershell
 node --version
 ```
+- `node`가 없는 경우 [여기](https://nodejs.org/ko/blog/release/v20.9.0)를 눌러 다운
+
+#### frontend(React) 개발 환경 설정 방
+1. 로컬에 clone을 받는다.
+2. 터미널에서 frontend로 들어간다.
+3. `~/frontend/`경로에서 터미널에 `npm install` 입력한다.
+4. 개발 시작!
 
 ### 2. Backend
 
