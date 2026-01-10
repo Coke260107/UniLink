@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router";
+import { createPortal } from "react-dom";
+
+// Component
+import AuthModal from "../modals/AuthModal";
+
+// Type
+import type { SocialProvider } from "../../type/AuthType";
 
 const menus = [
   { to: "/", label: "공부" },
@@ -9,20 +16,23 @@ const menus = [
 ];
 
 function TopBar() {
-  return (
-    <div className="flex flex-1 flex-row justify-between items-center-safe">
-      <div className="flex justify-center-safe items-center-safe h-full gap-7.5">
-        <Link to="/" className="text-3xl font-bold">
-          UNILINK
-        </Link>
+  const [authModalIsOpen, setAuthModalIsOpen] = useState(false);
 
-        <div className="hidden flex-row lg:flex">
-          {menus.map((menu) => (
-            <NavLink
-              key={menu.to}
-              to={menu.to}
-              className={({ isActive }) =>
-                `
+  return (
+    <>
+      <div className="flex flex-1 flex-row justify-between items-center-safe">
+        <div className="flex justify-center-safe items-center-safe h-full gap-7.5">
+          <Link to="/" className="text-3xl font-bold">
+            UNILINK
+          </Link>
+
+          <div className="hidden flex-row lg:flex">
+            {menus.map((menu) => (
+              <NavLink
+                key={menu.to}
+                to={menu.to}
+                className={({ isActive }) =>
+                  `
                   px-2.5 py-1.25
                   ${
                     isActive
@@ -30,21 +40,30 @@ function TopBar() {
                       : "text-stone-950/50 dark:text-stone-50/50"
                   }
                 `
-              }
-            >
-              <span className="font-semibold">{menu.label}</span>
-            </NavLink>
-          ))}
+                }
+              >
+                <span className="font-semibold">{menu.label}</span>
+              </NavLink>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex justify-center-safe items-center-safe gap-7.5">
+          <LightDarkToggle />
+          <button
+            className="flex justify-center-safe items-center-safe bg-red-500 px-3 py-1 rounded-lg dark:bg-blue-500"
+            onClick={() => setAuthModalIsOpen(true)}
+          >
+            <span className="text-white font-semibold">로그인</span>
+          </button>
         </div>
       </div>
 
-      <div className="flex justify-center-safe items-center-safe gap-7.5">
-        <LightDarkToggle />
-        <button className="flex justify-center-safe items-center-safe bg-red-500 px-3 py-1 rounded-lg dark:bg-blue-500">
-          <span className="text-white font-semibold">로그인</span>
-        </button>
-      </div>
-    </div>
+      <AuthModal
+        isOpen={authModalIsOpen}
+        onClose={() => setAuthModalIsOpen(false)}
+      />
+    </>
   );
 }
 

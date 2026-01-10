@@ -115,7 +115,7 @@ function HomePage() {
         </div>
 
         {/* Flat List */}
-        <Marquee speed={100} className="py-10">
+        <Marquee speed={50} className="py-10">
           {meetingPreviewData.map((data) => {
             const isActive = meetingCategory === data.category;
 
