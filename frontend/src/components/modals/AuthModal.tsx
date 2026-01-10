@@ -72,7 +72,7 @@ AuthModalProps) {
             <span>UNILINK 입니다.</span>
           </div>
           <div className="flex flex-wrap flex-row text-sm text-stone-950/50 dark:text-stone-50/50">
-            <span>원활한 서비스를 이용을 위해&nbsp;</span>
+            <span>원활한 서비스 이용을 위해&nbsp;</span>
             <span>로그인이 필요합니다.</span>
           </div>
         </div>
