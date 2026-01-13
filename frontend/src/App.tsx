@@ -5,9 +5,11 @@ import HomePage from "./pages/HomePage";
 
 // Utils
 import MainLayout from "./utils/MainLayout";
+import { AuthProvider } from "./auth/authcontext";
 
 function App() {
     return (
+        <AuthProvider>
         <BrowserRouter>
             <Routes>
                 <Route element={<MainLayout />}>
@@ -15,6 +17,7 @@ function App() {
                 </Route>
             </Routes>
         </BrowserRouter>
+        </AuthProvider>
     );
 }
 

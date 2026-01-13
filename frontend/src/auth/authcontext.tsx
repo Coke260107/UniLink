@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, type ReactNode } from 'react'
+import { createContext, useContext, useState, useMemo, type ReactNode } from 'react'
 import type { AuthContextType } from '../type/AuthContextType'
 
 
@@ -13,11 +13,21 @@ type AuthProviderProps = {
 export const AuthProvider = ({ children } : AuthProviderProps) => {
     const[accessToken, setAccessToken] = useState< string | null>(null) 
 
-    const login = (accessToken : string) => setAccessToken(accessToken)
-    const logout = () => setAccessToken(null)
+    const login = (accessToken : string) => setAccessToken(accessToken) // 토큰 저장
+    const logout = () => setAccessToken(null)   // 토큰 제거
+    const isAuthenticated = !!accessToken;  //로그인 여부 판단
 
+
+    const value = useMemo (
+        () => ({
+            accessToken,
+            login,
+            logout,
+            isAuthenticated,
+        }), [accessToken]
+    )
     return (
-        <AuthContext.Provider value = {{ accessToken, login, logout }}>
+        <AuthContext.Provider value = { value }>
             { children }
         </AuthContext.Provider>
     )
